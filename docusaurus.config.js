@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Boning Li Docs',
-  tagline: 'Technical Documentation & Guides',
+  tagline: 'Houdini & VFX Technical Documentation',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.boningli.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Boning1011', // Usually your GitHub org/user name.
+  projectName: 'boningli-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -47,10 +47,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Boning1011/boningli-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -58,10 +57,9 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Boning1011/boningli-docs/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -97,7 +95,12 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://boningli.com',
+            label: 'Portfolio',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/Boning1011',
             label: 'GitHub',
             position: 'right',
           },
@@ -107,41 +110,45 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Content',
             items: [
               {
-                label: 'Linux Render Farm',
+                label: 'Docs',
                 to: '/docs/houdini-linux-render-farm-setup',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
                 label: 'Blog',
                 to: '/blog',
               },
+            ],
+          },
+          {
+            title: 'Projects',
+            items: [
+              {
+                label: 'Motion COPS',
+                href: 'https://github.com/Boning1011/motion-cops',
+              },
+              {
+                label: 'Portfolio',
+                href: 'https://boningli.com',
+              },
+            ],
+          },
+          {
+            title: 'Connect',
+            items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Boning1011',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/boning1011/',
+              },
+              {
+                label: 'X',
+                href: 'https://x.com/boningli1',
               },
             ],
           },

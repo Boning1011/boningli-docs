@@ -6,7 +6,9 @@
       "Bash(npm start:*)",
       "Bash(rmdir:*)",
       "Bash(del intro.md)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(dir:*)",
+      "Bash(cat:*)"
     ],
     "deny": []
   }
