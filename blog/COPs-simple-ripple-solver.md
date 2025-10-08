@@ -14,35 +14,35 @@ This is a simple yet effective ripple solver implemented as a Houdini COPs OpenC
 
 The simulation is based on the **2D wave equation**, which describes how waves propagate across a surface:
 
-$$
-\frac{\partial^2 h}{\partial t^2} = c^2 \nabla^2 h
-$$
+```math
+∂²h/∂t² = c² ∇²h
+```
 
 Where:
-- $h$ is the height (displacement) of the water surface
-- $c$ is the wave speed
-- $\nabla^2$ is the Laplacian operator (spatial second derivative)
+- `h` is the height (displacement) of the water surface
+- `c` is the wave speed
+- `∇²` is the Laplacian operator (spatial second derivative)
 
 ### Discrete Implementation
 
 To simulate this on a discrete grid, we use a finite difference approximation:
 
 1. **Laplacian approximation** (measures curvature at each point):
-   $$
-   \nabla^2 h_{i,j} \approx h_{i-1,j} + h_{i+1,j} + h_{i,j-1} + h_{i,j+1} - 4h_{i,j}
-   $$
+   ```
+   ∇²h[i,j] ≈ h[i-1,j] + h[i+1,j] + h[i,j-1] + h[i,j+1] - 4h[i,j]
+   ```
 
 2. **Velocity update** (acceleration from curvature):
-   $$
-   v_{new} = d \cdot (v + c^2 \cdot \nabla^2 h)
-   $$
+   ```
+   v_new = d × (v + c² × ∇²h)
+   ```
 
 3. **Height update** (integration of velocity):
-   $$
-   h_{new} = d \cdot (h + v_{new})
-   $$
+   ```
+   h_new = d × (h + v_new)
+   ```
 
-Where $d$ is a damping factor (< 1.0) that causes waves to gradually decay, simulating energy loss.
+Where `d` is a damping factor (< 1.0) that causes waves to gradually decay, simulating energy loss.
 
 ## Algorithm Overview
 

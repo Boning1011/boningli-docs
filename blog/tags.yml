@@ -1,19 +1,131 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+# VFX & Houdini
+houdini:
+  label: Houdini
+  permalink: /houdini
+  description: SideFX Houdini tips, techniques, and workflows
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+cops:
+  label: COPs
+  permalink: /cops
+  description: Houdini Compositing Operators - image processing and manipulation
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+sops:
+  label: SOPs
+  permalink: /sops
+  description: Houdini Surface Operators - geometry manipulation and modeling
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+vex:
+  label: VEX
+  permalink: /vex
+  description: Houdini VEX programming language
+
+vfx:
+  label: VFX
+  permalink: /vfx
+  description: Visual effects techniques and workflows
+
+# Programming & Technical
+opencl:
+  label: OpenCL
+  permalink: /opencl
+  description: OpenCL parallel computing and GPU programming
+
+python:
+  label: Python
+  permalink: /python
+  description: Python programming and scripting
+
+cuda:
+  label: CUDA
+  permalink: /cuda
+  description: NVIDIA CUDA GPU computing
+
+cpp:
+  label: C++
+  permalink: /cpp
+  description: C++ programming and development
+
+# Simulation & Physics
+simulation:
+  label: Simulation
+  permalink: /simulation
+  description: Physics simulations and solvers
+
+fluids:
+  label: Fluids
+  permalink: /fluids
+  description: Fluid simulation techniques
+
+pyro:
+  label: Pyro
+  permalink: /pyro
+  description: Fire and smoke simulation
+
+particles:
+  label: Particles
+  permalink: /particles
+  description: Particle systems and simulations
+
+rbd:
+  label: RBD
+  permalink: /rbd
+  description: Rigid body dynamics and destruction
+
+# Rendering & Shading
+rendering:
+  label: Rendering
+  permalink: /rendering
+  description: Rendering techniques and workflows
+
+shading:
+  label: Shading
+  permalink: /shading
+  description: Shader development and material creation
+
+mantra:
+  label: Mantra
+  permalink: /mantra
+  description: Houdini's Mantra renderer
+
+karma:
+  label: Karma
+  permalink: /karma
+  description: Houdini's Karma renderer
+
+# Tools & Workflows
+pipeline:
+  label: Pipeline
+  permalink: /pipeline
+  description: Production pipeline and workflow optimization
+
+hdas:
+  label: HDAs
+  permalink: /hdas
+  description: Houdini Digital Assets
+
+automation:
+  label: Automation
+  permalink: /automation
+  description: Process automation and scripting
+
+# Math & Algorithms
+math:
+  label: Math
+  permalink: /math
+  description: Mathematical concepts and algorithms
+
+algorithms:
+  label: Algorithms
+  permalink: /algorithms
+  description: Algorithm design and implementation
+
+# General
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Step-by-step tutorials and guides
+
+tips:
+  label: Tips
+  permalink: /tips
+  description: Quick tips and tricks
