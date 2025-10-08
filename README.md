@@ -1,41 +1,32 @@
-# Website
+# Boning Li Docs
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Technical documentation for Houdini, VFX, and procedural workflows.
 
-## Installation
+**📚 View the docs at: [docs.boningli.com](https://docs.boningli.com)**
 
-```bash
-yarn
-```
+## About
 
-## Local Development
+This repository contains the source for my technical documentation site, where I share:
 
-```bash
-yarn start
-```
+- **Long-form guides**: Houdini workflows, render farm setups, and VFX pipeline tools
+- **Quick notes**: Short tutorials and tips for Houdini COPS, procedural techniques, and motion design
+- **Motion COPS toolkit documentation**: For my [Motion COPS](https://github.com/Boning1011/motion-cops) project
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Tech Stack
 
-## Build
+Built with [Docusaurus](https://docusaurus.io/) and deployed to GitHub Pages.
 
-```bash
-yarn build
-```
+- All content written in Markdown
+- Images and media stored locally alongside each page
+- Automatic deployment via CI on push to `main`
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Connect
 
-## Deployment
+- 🎨 [Portfolio](https://boningli.com)
+- 💻 [GitHub](https://github.com/Boning1011)
+- 📸 [Instagram](https://www.instagram.com/boning1011/)
+- 🐦 [X/Twitter](https://x.com/boningli1)
 
-Using SSH:
+---
 
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+© 2025 Boning Li. Built with Docusaurus.

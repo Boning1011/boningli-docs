@@ -91,9 +91,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Docs',
+            label: 'Long-form Guides',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Quick Notes', position: 'left'},
           {
             href: 'https://boningli.com',
             label: 'Portfolio',
@@ -113,11 +113,11 @@ const config = {
             title: 'Content',
             items: [
               {
-                label: 'Docs',
+                label: 'Long-form Guides',
                 to: '/docs/houdini-linux-render-farm-setup',
               },
               {
-                label: 'Blog',
+                label: 'Quick Notes',
                 to: '/blog',
               },
             ],
