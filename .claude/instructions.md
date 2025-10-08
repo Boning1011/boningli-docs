@@ -137,3 +137,33 @@ image: ./img/thumb.jpg
 4. **File naming**: Use kebab-case, include date prefix for blog posts (yyyy-mm-dd-title.md)
 5. **Links**: Use relative paths for internal links; absolute paths for external
 6. **Code blocks**: Always specify language for syntax highlighting
+
+## Technical Blog Post Workflow
+
+When the user pastes code for a new blog post (COPs, VEX, Python, etc.):
+
+1. **Start concise**: Write a brief initial version including:
+   - Short intro (2-3 sentences max)
+   - Basic algorithm/approach explanation
+   - The code with minimal inline comments
+   - Simple parameter table if applicable
+
+2. **Wait for user feedback**: Let the user request specific additions rather than writing everything upfront
+
+3. **Expand on request**: Add only what's requested, such as:
+   - Physics formulas (use LaTeX with `$$` syntax - KaTeX is configured)
+   - Detailed algorithm breakdown
+   - Usage examples
+   - Performance notes
+   - Edge cases
+
+4. **Format for readability**:
+   - Use proper front-matter with title, description, and tags
+   - Include `<!-- truncate -->` marker after intro
+   - Use tables for parameters
+   - Use LaTeX for math formulas
+   - Add code comments only where they clarify non-obvious logic
+
+**Example tags to use**: houdini, cops, sops, vex, opencl, python, simulation, vfx, rendering, etc. (defined in `/blog/tags.yml`)
+
+This iterative approach is more efficient than writing comprehensive documentation in the first pass.
