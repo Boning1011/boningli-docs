@@ -8,7 +8,8 @@
       "Bash(del intro.md)",
       "Bash(rm:*)",
       "Bash(dir:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(npm install:*)"
     ],
     "deny": []
   }
