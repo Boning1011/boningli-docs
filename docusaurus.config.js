@@ -48,6 +48,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/', // Serve docs at the site's root
           sidebarPath: './sidebars.js',
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -96,7 +97,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'Boning Li Docs',
+        title: 'Bo-Ning Li',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -106,7 +107,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Long-form Guides',
+            label: 'Longform',
           },
           {to: '/blog', label: 'Quick Notes', position: 'left'},
           {
