@@ -11,8 +11,8 @@ Technical documentation and guides for Houdini, VFX, and computer graphics workf
 
 Comprehensive tutorials and setup guides:
 
-- [Houdini Linux Render Farm Setup](houdini-linux-render-farm-setup.md)
-- [Color Management Standards](color-management-standards.md)
+- [Houdini Linux Render Farm Setup](/houdini-linux-render-farm-setup)
+- [Color Management Standards](/color-management-standards)
 
 ## Quick Notes
 

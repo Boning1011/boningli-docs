@@ -129,8 +129,8 @@ const config = {
             title: 'Content',
             items: [
               {
-                label: 'Long-form Guides',
-                to: '/docs/houdini-linux-render-farm-setup',
+                label: 'Longform',
+                to: '/',
               },
               {
                 label: 'Quick Notes',
