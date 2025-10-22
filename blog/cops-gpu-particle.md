@@ -2,6 +2,7 @@
 title: COPs GPU Particle
 date: 2025-10-22
 description: Simple example showing how to advect particles in Copernicus
+tags: [houdini, cops, opencl, particles, simulation, gpu]
 ---
 
 Geometry can work within the Copernicus context. A typical workflow is to import geometry via SOP, rasterize position, UV, and other attributes to 2D layers, perform various texture operations, then export the results back as materials onto the geometry.
