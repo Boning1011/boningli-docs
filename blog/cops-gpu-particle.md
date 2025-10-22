@@ -1,5 +1,6 @@
 ---
 title: COPs GPU Particle
+date: 2025-10-22
 description: Simple example showing how to advect particles in Copernicus
 ---
 

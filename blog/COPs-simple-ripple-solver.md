@@ -1,5 +1,6 @@
 ---
-title: Simple Ripple Solver in Houdini COPs
+title: COPs Simple Ripple Solver 
+date: 2025-10-08
 description: A lightweight water ripple simulation using the 2D wave equation
 tags: [houdini, cops, opencl, simulation, vfx]
 ---

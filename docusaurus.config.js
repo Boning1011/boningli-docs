@@ -51,8 +51,8 @@ const config = {
           routeBasePath: '/', // Serve docs at the site's root
           sidebarPath: './sidebars.js',
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Boning1011/boningli-docs/tree/main/',
+          // editUrl:
+          //   'https://github.com/Boning1011/boningli-docs/tree/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
@@ -63,8 +63,8 @@ const config = {
             xslt: true,
           },
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Boning1011/boningli-docs/tree/main/',
+          // editUrl:
+          //   'https://github.com/Boning1011/boningli-docs/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',

@@ -1,5 +1,6 @@
 ---
-title: Black Hole Distortion Effect in COPs
+title: COPs Black Hole Distortion 
+date: 2025-10-08
 description: UV distortion based on SDF gradients for gravitational lensing effects
 tags: [houdini, cops, opencl, vfx]
 ---
