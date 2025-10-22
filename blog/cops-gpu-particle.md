@@ -23,3 +23,34 @@ Simple particle advecting:
     @P.set(newpos);
 }
 ```
+
+Rasterize particle to a density layer. This is a quick and dirty way.
+```
+#runover attribute
+#bind point &P                port=particle float3
+#bind layer &?density         int val=0    // mono int layer, starts at 0
+
+@KERNEL
+{
+    // World -> Image (3D version returns float3; use .xy)
+    float3 img = @density.worldToImage3(@P);
+
+    // Image -> Buffer (float2)
+    float2 buf = @density.imageToBuffer((float2)(img.x, img.y));
+
+    // Round to nearest integer pixel in buffer space
+    float2 bf = floor(buf + (float2)(0.5f, 0.5f));
+    int2 ixy  = convert_int2(bf);  // <-- key change
+
+    // Bounds check
+    if (ixy.x < 0 || ixy.y < 0 || ixy.x >= @density.xres || ixy.y >= @density.yres)
+        return;
+
+    // Linear index
+    int idx = ixy.y * @density.xres + ixy.x;
+
+    // Parallel-safe atomic increment
+    global volatile int *dst = (global volatile int *)@density.data;
+    atomic_inc(&dst[idx]);
+}
+```
