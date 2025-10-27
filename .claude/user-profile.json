@@ -1,0 +1,32 @@
+{
+  "personal": {
+    "fullName": "Boning Li",
+    "displayName": "Bo-Ning Li",
+    "chineseName": "厉博宁",
+    "professionalTitle": "Technical Artist / 3D Artist"
+  },
+  "online": {
+    "portfolio": "http://boningli.com",
+    "github": "https://github.com/Boning1011",
+    "instagram": "https://www.instagram.com/boning1011/",
+    "twitter": "https://x.com/boningli1"
+  },
+  "work": {
+    "currentCompany": "Volvoxlabs",
+    "companyWebsite": "https://www.volvoxlabs.com/",
+    "location": "Brooklyn, NY"
+  },
+  "projects": {
+    "motionCops": {
+      "name": "Motion COPS",
+      "url": "https://github.com/Boning1011/motion-cops",
+      "description": "Free Houdini toolkit that transforms Copernicus into a motion design powerhouse, 20+ HDAs, actively updating"
+    },
+    "docsRepo": {
+      "name": "boningli-docs",
+      "url": "https://github.com/Boning1011/boningli-docs",
+      "organizationName": "Boning1011",
+      "projectName": "boningli-docs"
+    }
+  }
+}

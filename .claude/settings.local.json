@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npm start)",
+      "Bash(npm start:*)",
+      "Bash(rmdir:*)",
+      "Bash(del intro.md)",
+      "Bash(rm:*)",
+      "Bash(dir:*)",
+      "Bash(cat:*)",
+      "Bash(npm install:*)"
+    ],
+    "deny": []
+  }
+}
