@@ -15,6 +15,7 @@ I'm a builder who works across creative technology — from procedural 3D and re
 - [Color Management Standards](/color-management-standards) — ACEScg / sRGB color space framework and pipeline rules
 ## Copernicus / COPs
 
+- [Risograph in COPs](/risograph-in-cops) — Subtractive color mixing with Kubelka-Munk theory, dithering, and ink decomposition
 - [Black Hole Distortion](/blog/cops-blackhole-distort) — UV distortion via SDF gradients for gravitational lensing effects
 - [Simple Ripple Solver](/blog/cops-simple-ripple-solver) — Lightweight water ripple simulation using the 2D wave equation
 - [GPU Particle Advection](/blog/cops-gpu-particle) — Advecting particles entirely within the Copernicus context

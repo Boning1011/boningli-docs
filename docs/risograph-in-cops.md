@@ -1,7 +1,7 @@
 ---
 title: "Risograph in COPs: Subtractive Color Mixing with Kubelka-Munk Theory"
-date: 2026-03-09
 description: Rebuilding Risograph printing from scratch in Houdini Copernicus — ink decomposition, KM color science, dithering, and the art-vs-physics balancing act
+sidebar_label: Risograph in COPs
 tags: [houdini, cops, opencl, color-science, risograph]
 ---
 
@@ -10,8 +10,6 @@ tags: [houdini, cops, opencl, color-science, risograph]
 Risograph is one of those rare processes where the imperfections _are_ the aesthetic. Misregistered layers, grain from soy-based ink, halftone artifacts — they all contribute to the charm. But recreating it digitally turns out to be a surprisingly deep problem that touches color science, dithering theory, and fundamental questions about what "accurate" even means for an inherently imprecise medium.
 
 This post documents my approach to building a procedural Risograph simulator in Houdini's Copernicus (COPs), including the design decisions, trade-offs, and the rabbit holes I went down along the way.
-
-<!-- truncate -->
 
 ## The Problem with "Just Use Multiply"
 
