@@ -13,13 +13,11 @@ I'm a builder who works across creative technology — from procedural 3D and re
 - [Houdini Agent Design Philosophy](/houdini-agent-design-philosophy) — Why a thin bridge between AI agents and Houdini matters more than pre-built workflows
 - [Linux Render Farm Setup](/houdini-linux-render-farm-setup) — Practical guide for setting up a Linux-based render farm
 - [Color Management Standards](/color-management-standards) — ACEScg / sRGB color space framework and pipeline rules
-- [Risograph Effect in Houdini](/remake-risograph-effect-in-houdini) — Recreating the risograph printing aesthetic procedurally
-
 ## Copernicus / COPs
 
-- [Black Hole Distortion](/blog/cops-blackhole-distort) — UV distortion via SDF gradients for gravitational lensing effects
-- [Simple Ripple Solver](/blog/cops-simple-ripple-solver) — Lightweight water ripple simulation using the 2D wave equation
-- [GPU Particle Advection](/blog/cops-gpu-particle) — Advecting particles entirely within the Copernicus context
+- [Black Hole Distortion](/blog/2025/10/08/cops-blackhole-distort) — UV distortion via SDF gradients for gravitational lensing effects
+- [Simple Ripple Solver](/blog/2025/10/08/cops-simple-ripple-solver) — Lightweight water ripple simulation using the 2D wave equation
+- [GPU Particle Advection](/blog/2025/10/22/cops-gpu-particle) — Advecting particles entirely within the Copernicus context
 
 ## Projects
 
