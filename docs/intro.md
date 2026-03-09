@@ -15,9 +15,9 @@ I'm a builder who works across creative technology — from procedural 3D and re
 - [Color Management Standards](/color-management-standards) — ACEScg / sRGB color space framework and pipeline rules
 ## Copernicus / COPs
 
-- [Black Hole Distortion](/blog/2025/10/08/cops-blackhole-distort) — UV distortion via SDF gradients for gravitational lensing effects
-- [Simple Ripple Solver](/blog/2025/10/08/cops-simple-ripple-solver) — Lightweight water ripple simulation using the 2D wave equation
-- [GPU Particle Advection](/blog/2025/10/22/cops-gpu-particle) — Advecting particles entirely within the Copernicus context
+- [Black Hole Distortion](/blog/cops-blackhole-distort) — UV distortion via SDF gradients for gravitational lensing effects
+- [Simple Ripple Solver](/blog/cops-simple-ripple-solver) — Lightweight water ripple simulation using the 2D wave equation
+- [GPU Particle Advection](/blog/cops-gpu-particle) — Advecting particles entirely within the Copernicus context
 
 ## Projects
 
