@@ -1,5 +1,6 @@
 ---
 title: COPs GPU Particle
+slug: cops-gpu-particle
 date: 2025-10-22
 description: Simple example showing how to advect particles in Copernicus
 tags: [houdini, cops, opencl, particles, simulation, gpu]
