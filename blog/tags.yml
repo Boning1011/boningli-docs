@@ -119,6 +119,12 @@ algorithms:
   permalink: /algorithms
   description: Algorithm design and implementation
 
+# AI & Agents
+ai:
+  label: AI
+  permalink: /ai
+  description: AI-assisted workflows and coding agents
+
 # General
 tutorial:
   label: Tutorial
