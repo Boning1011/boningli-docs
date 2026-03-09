@@ -99,8 +99,9 @@ const config = {
       navbar: {
         title: 'Bo-Ning Li',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Boning Li',
+          src: 'img/avatar.png',
+          style: {borderRadius: '50%'},
         },
         items: [
           {

@@ -1,8 +1,7 @@
 ---
 title: "Designing Houdini Agent: Why I Bet on a Thin Bridge"
-date: 2026-03-09
-authors: [boningli]
 description: The design philosophy behind houdini-agent — why a general-purpose interface to Houdini matters more than pre-built workflows, and how I'm thinking about AI-assisted DCC work.
+sidebar_label: Houdini Agent Design Philosophy
 tags: [houdini, ai, python, automation, pipeline]
 ---
 
@@ -13,8 +12,6 @@ I'm building an open-source toolkit to bring AI coding agents into Houdini's wor
 I've been using Houdini for over eight years. In that time, the tool itself has changed a lot — COPs got rebuilt, KineFX replaced the old rigging system, USD/LOPs became a first-class citizen — but the way I *work with it* hasn't changed nearly as much. I still spend a significant chunk of my day on tasks that require Houdini expertise but not necessarily creative judgment: debugging VEX, tracing attribute flows through ten-deep node chains, cross-checking parameter values, building boilerplate networks I've built a hundred times before.
 
 That's the work I wanted to hand off.
-
-<!-- truncate -->
 
 ## The Starting Observation
 
