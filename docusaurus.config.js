@@ -56,22 +56,7 @@ const config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/Boning1011/boningli-docs/tree/main/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -108,9 +93,8 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Longform',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Quick Notes', position: 'left'},
           {
             href: 'https://boningli.com',
             label: 'Portfolio',
@@ -130,12 +114,8 @@ const config = {
             title: 'Content',
             items: [
               {
-                label: 'Longform',
+                label: 'Docs',
                 to: '/',
-              },
-              {
-                label: 'Quick Notes',
-                to: '/blog',
               },
             ],
           },

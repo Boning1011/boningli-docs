@@ -2,6 +2,7 @@
 title: "Designing Houdini Agent: Why I Bet on a Thin Bridge"
 description: The design philosophy behind houdini-agent — why a general-purpose interface to Houdini matters more than pre-built workflows, and how I'm thinking about AI-assisted DCC work.
 sidebar_label: Houdini Agent Design Philosophy
+sidebar_position: 1
 tags: [houdini, ai, python, automation, pipeline]
 ---
 

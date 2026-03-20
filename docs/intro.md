@@ -10,15 +10,20 @@ I'm a builder who works across creative technology — from procedural 3D and re
 
 ## Houdini & Pipeline
 
-- [Houdini Agent Design Philosophy](/houdini-agent-design-philosophy) — Why a thin bridge between AI agents and Houdini matters more than pre-built workflows
-- [Linux Render Farm Setup](/houdini-linux-render-farm-setup) — Practical guide for setting up a Linux-based render farm
-- [Color Management Standards](/color-management-standards) — ACEScg / sRGB color space framework and pipeline rules
-## Copernicus / COPs
+- [Houdini Agent Design Philosophy](/houdini-pipeline/houdini-agent-design-philosophy) — Why a thin bridge between AI agents and Houdini matters more than pre-built workflows
+- [Linux Render Farm Setup](/houdini-pipeline/houdini-linux-render-farm-setup) — Practical guide for setting up a Linux-based render farm
+- [Color Management Standards](/houdini-pipeline/color-management-standards) — ACEScg / sRGB color space framework and pipeline rules
 
-- [Risograph in COPs](/risograph-in-cops) — Subtractive color mixing with Kubelka-Munk theory, dithering, and ink decomposition
-- [Black Hole Distortion](/blog/cops-blackhole-distort) — UV distortion via SDF gradients for gravitational lensing effects
-- [Simple Ripple Solver](/blog/cops-simple-ripple-solver) — Lightweight water ripple simulation using the 2D wave equation
-- [GPU Particle Advection](/blog/cops-gpu-particle) — Advecting particles entirely within the Copernicus context
+## Copernicus (COPs)
+
+- [Risograph in COPs](/cops/risograph-in-cops) — Subtractive color mixing with Kubelka-Munk theory, dithering, and ink decomposition
+- [Black Hole Distortion](/cops/cops-blackhole-distort) — UV distortion via SDF gradients for gravitational lensing effects
+- [Simple Ripple Solver](/cops/cops-simple-ripple-solver) — Lightweight water ripple simulation using the 2D wave equation
+- [GPU Particle Advection](/cops/cops-gpu-particle) — Advecting particles entirely within the Copernicus context
+
+## AI & Robotics
+
+- [AI Robotic Arm](/ai-robotics/uf850-ai-robotic-arm) — An AI-first approach to robotic interaction with one webcam
 
 ## Projects
 

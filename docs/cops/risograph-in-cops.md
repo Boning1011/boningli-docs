@@ -2,6 +2,7 @@
 title: "Risograph in COPs: Subtractive Color Mixing with Kubelka-Munk Theory"
 description: Rebuilding Risograph printing from scratch in Houdini Copernicus — ink decomposition, KM color science, dithering, and the art-vs-physics balancing act
 sidebar_label: Risograph in COPs
+sidebar_position: 1
 tags: [houdini, cops, opencl, color-science, risograph]
 ---
 

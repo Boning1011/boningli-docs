@@ -1,5 +1,8 @@
 ---
+title: Linux Render Farm Setup Guide
+sidebar_label: Linux Render Farm Setup
 sidebar_position: 2
+tags: [houdini, linux, pipeline, render-farm]
 ---
 
 # Linux Render Farm Setup Guide
@@ -13,7 +16,7 @@ A practical guide for setting up and managing a Linux-based render farm, primari
 
 In Linux, accessing the NAS is handled differently compared to Windows. While Windows can connect directly using paths like `\\VVOX-NAS-1\PROJECTS`, Linux requires the NAS folder to be mounted as a local directory, typically under `/mnt`. This allows applications like Houdini and Deadline to interact with the NAS as if it were a local folder, ensuring smooth and consistent access.
 
-**Note:**  
+**Note:**
 To maintain cross-platform compatibility, use paths that work on both Windows and Linux. Consider environment variables like `$HIP` or custom variables pointing to asset folders. For Deadline and HQueue, set appropriate path mappings.
 
 ### Temporally Mount a NAS Folder:
@@ -31,17 +34,17 @@ _Note:_ Verify the ownership of the folder. If needed, adjust it using:
 ```
 sudo chown yourusername:yourusername /mnt/VVOX-NAS-1/your_folder_name
 ```
-#### 2. Mount a Folder 
+#### 2. Mount a Folder
 Use the following command to mount a folder with your NAS credentials:
 ```
 sudo mount -t cifs -o username=myusername,password=mypassword,uid=1000,gid=1000,dir_mode=0777,file_mode=0777,vers=3.0 //10.0.10.11/PROJECTS /mnt/VVOX-NAS-1/projects
 sudo mount -t cifs -o username=myusername,password=mypassword,uid=1000,gid=1000,dir_mode=0777,file_mode=0777,vers=3.0 //10.0.10.11/deadline10-repo /mnt/VVOX-NAS-1/deadline-repo
-``` 
+```
 **Note:**
 `10.0.10.11` is the IP address of VVOX-NAS-1. For unknown reason the `VVOX-NAS-1.local` sometimes having resolving issue on one of the machine, even after `sudo nano /etc/hosts` and add line `10.0.10.11 VVOX-NAS-1.local`
 I've constantly met permission issue with NFS mounting so I switched to SMB.
 
-### Automatically Mount at Startup:   
+### Automatically Mount at Startup:
 #### 1. Edit the /etc/fstab File
 To set up automatic mounting on startup, edit the `/etc/fstab` file
 ```
@@ -80,14 +83,14 @@ Linux package requirements for Houdini 20.5:
 https://www.sidefx.com/Support/system-requirements/linux-package-requirements-for-houdini-205/
 
 ```
-sudo dnf install alsa-lib compat-openssl11 dbus-libs expat fontconfig glibc libatomic libevent libglvnd-glx libglvnd-opengl libICE libSM libX11 libX11-xcb libxcb libXcomposite libXcursor libXdamage libXext libXfixes libXi libxkbcommon libxkbcommon-x11 libXrandr libXrender libXScrnSaver libXt libXtst libzstd nspr nss nss-util openldap pciutils-libs tbb xcb-util xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm zlib 
+sudo dnf install alsa-lib compat-openssl11 dbus-libs expat fontconfig glibc libatomic libevent libglvnd-glx libglvnd-opengl libICE libSM libX11 libX11-xcb libxcb libXcomposite libXcursor libXdamage libXext libXfixes libXi libxkbcommon libxkbcommon-x11 libXrandr libXrender libXScrnSaver libXt libXtst libzstd nspr nss nss-util openldap pciutils-libs tbb xcb-util xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm zlib
 ```
 ### HQueue
 To make sure the HQueue working properly, the two main env variables are: `HOUDINI_HQUEUE_SERVER` and `HOUDINI_HQUEUE_HFS`, one of the most common error is due to the client machine don't have corresponding minor houdini version installed. To solve this, managing the config through centralized packages is highly recommended.
 
 #### Basic Things to Check
 
-1. The client machines are shown available on HQueue dashboard 
+1. The client machines are shown available on HQueue dashboard
 
 2. Make sure all machines env are properly shared and managed
 
@@ -97,16 +100,16 @@ Then TOP hqscheduler should likely work with all default parameters(on Windows c
 
 #### Linux HQueue Client
 
-In order to let linux client successfully pick and run a job, there're 2 main steps: 
+In order to let linux client successfully pick and run a job, there're 2 main steps:
 
 1. Find the hython to use (HFS)
 
 2. Find the .hip to open (HQueue path mapping)
 
-The first step should work if the `HOUDINI_HQUEUE_HFS_LINUX` is set correctly. The 2nd step similar to setting the path mapping in deadline, which can be done by setting the `HQROOT` from Hqueue dashboard or `network_folders.ini` on server machine(need to restart service). 
+The first step should work if the `HOUDINI_HQUEUE_HFS_LINUX` is set correctly. The 2nd step similar to setting the path mapping in deadline, which can be done by setting the `HQROOT` from Hqueue dashboard or `network_folders.ini` on server machine(need to restart service).
 
 ```
-[HQROOT] 
+[HQROOT]
 windows = //Vvox-nas-1/PROJECTS
 linux = /mnt/VVOX-NAS-1/projects
 ```
@@ -123,13 +126,13 @@ Two Solutions:
 
 1. Adding package to `HOUDINI_PATH` one by one though `[job_environment]` section (*Not* recommend, debugging only)
 
-2. Setting `HOUDINI_PACKAGE_DIR` as a system variable(Recommend). 
-    
+2. Setting `HOUDINI_PACKAGE_DIR` as a system variable(Recommend).
+
     Firstly:
-    
+
     ```
     sudo nano /etc/environment
-    ``` 
+    ```
 
     Then add a line:
 
@@ -156,7 +159,7 @@ The issues happens in mixed environment. In a typical case that artist submit jo
 
 When a PDG Hqueue job is submitted, firstly there's a MQ "job" created. If there's error in that MQ job indicating the path isn't mapped properly, that's HQueue server's Network Folder setting, usually can be done by setting correct `HQROOT`.
 
-After the MQ job runs successfully the actual jobs are created. This is where `PDG Path Map` take effect. Click "Load Path Map" button and make sure no duplicate path map(Not sure if it's a bug or me setting incorrectly, that button will create a duplicate line for mounted and UNC Windows path). In theory the redundancy should be handled automatically but it's not really working, and can cause ping-pong or houdini freeze directly. 
+After the MQ job runs successfully the actual jobs are created. This is where `PDG Path Map` take effect. Click "Load Path Map" button and make sure no duplicate path map(Not sure if it's a bug or me setting incorrectly, that button will create a duplicate line for mounted and UNC Windows path). In theory the redundancy should be handled automatically but it's not really working, and can cause ping-pong or houdini freeze directly.
 
 >*Note: The path mapping zone should left unchecked. The `*` sign doesn't really apply to "all zones whether * or WIN or LINUX", but only the `*` zone.*
 
@@ -192,7 +195,7 @@ ASSETS="//Vvox-nas-1/projects/_____ASSETS"
 KARMA_XPU_OPTIX_DISABLE_HOST_PINNED = 1
 ```
 
-*Note: For daily-build after 20.5.395, this environment variable added as an internal debbug to disable the CUDA pin host memory feature. This feature will likely to cause the multi-gpu machine fail on allocating the host memory when rendering high resolution image.* 
+*Note: For daily-build after 20.5.395, this environment variable added as an internal debbug to disable the CUDA pin host memory feature. This feature will likely to cause the multi-gpu machine fail on allocating the host memory when rendering high resolution image.*
 
 **Other useful environment variables:**
 ```
@@ -201,7 +204,7 @@ KARMA_XPU_OPTIX_DISABLE_HOST_PINNED = 1
 KARMA_XPU_DEVICE = optix #new method, introduced in 20.5.394
 
 
-#Disable Specific GPU for XPU 
+#Disable Specific GPU for XPU
 KARMA_XPU_DISABLE_DEVICE_n=1
 
 #Optimize Multi-GPU Performance
@@ -217,7 +220,7 @@ Houdini crashes on startup when launched on headless machine.
 
 #### Solution 1 - Dongle
 
-Using a headless dongle and then restart. Potential issue is the dongle isn't maintaining a stable X11 session when the real monitor disconnects. 
+Using a headless dongle and then restart. Potential issue is the dongle isn't maintaining a stable X11 session when the real monitor disconnects.
 
 Try congfigure dongle BEFORE disconnecting monitor:
 
@@ -264,7 +267,7 @@ sudo dnf install gnome-session-xsession
 ```
 Then restart and choose the Xorg version of Gnome on the login screen.
 
-*Note: Developers said they are planning to add support on Wayland in Houdini 21 with Qt6 build. User from community with 20.5.473 Qt6 runs relatively stable with minor bugs.* 
+*Note: Developers said they are planning to add support on Wayland in Houdini 21 with Qt6 build. User from community with 20.5.473 Qt6 runs relatively stable with minor bugs.*
 
 
 ---
@@ -286,19 +289,19 @@ Then restart and choose the Xorg version of Gnome on the login screen.
         ```
 4. **PDG Deadline Scheduler**
    - Error: "This command does not support 'RunCommandForRepository'"
-     
+
         Great Clayton Krause from Thinkbox forum provided this solution and worked for me:
-     
+
         >Firstly, IT had to open up some ports on our internal network.
         >
         >From there, the ports had to be set on the DeadlinesSchedular -
         >
-        >Parms below under ‘Message Queue’ Tab. Both parms had to be enabled as well via the toggle next to them:
+        >Parms below under 'Message Queue' Tab. Both parms had to be enabled as well via the toggle next to them:
         >
         >taskcallbackport
         >
         >mqrelayport
         >
-        >After setting ports (assuming your environment requires you to open up specific ones for this as mine did), I had to toggle on “Inherit Local Environment” for both the Task Environment and Deadline Command Environment (deadline_inheritlocalenv & deadline_cmdinheritlocalenv) and under “Job Parms” tab as for some reason the environment wasn’t right.
+        >After setting ports (assuming your environment requires you to open up specific ones for this as mine did), I had to toggle on "Inherit Local Environment" for both the Task Environment and Deadline Command Environment (deadline_inheritlocalenv & deadline_cmdinheritlocalenv) and under "Job Parms" tab as for some reason the environment wasn't right.
 
-        2025/8/21 Update: 20.5.579&611 have fixs related to this issue. I haven't tested in studio yet. 
+        2025/8/21 Update: 20.5.579&611 have fixs related to this issue. I haven't tested in studio yet.

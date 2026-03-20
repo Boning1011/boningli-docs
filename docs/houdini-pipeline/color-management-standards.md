@@ -1,3 +1,10 @@
+---
+title: Color Management Standards
+sidebar_label: Color Management Standards
+sidebar_position: 3
+tags: [houdini, pipeline, color-management, nuke, after-effects]
+---
+
 # Color Management Standards v1.0
 
 Detailed explanation of ACEScg vs. sRGB here:

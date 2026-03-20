@@ -2,8 +2,8 @@
 title: "One Webcam, One Arm: An AI-First Approach to Robotic Interaction"
 description: A personal sprint into making a 6-axis industrial robot arm respond to people — using nothing but a webcam, Gemini VLM, MediaPipe, and a lot of AI-assisted coding.
 sidebar_label: AI Robotic Arm
+sidebar_position: 1
 tags: [robotics, ai, mediapipe, gemini, python, new-media]
-slug: uf850-ai-robotic-arm
 ---
 
 # One Webcam, One Arm: An AI-First Approach to Robotic Interaction

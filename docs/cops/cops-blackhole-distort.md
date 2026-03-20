@@ -1,7 +1,7 @@
 ---
 title: COPs Black Hole Distortion
-slug: cops-blackhole-distort
-date: 2025-10-08
+sidebar_label: Black Hole Distortion
+sidebar_position: 2
 description: UV distortion based on SDF gradients for gravitational lensing effects
 tags: [houdini, cops, opencl, vfx]
 ---
@@ -9,8 +9,6 @@ tags: [houdini, cops, opencl, vfx]
 # Black Hole Distortion Effect in COPs
 
 A COPs OpenCL kernel that creates gravitational lensing-style distortion by pulling pixels toward a mask boundary. It uses an SDF (signed distance field) and its gradient to generate UV offsets.
-
-<!-- truncate -->
 
 ## How It Works
 

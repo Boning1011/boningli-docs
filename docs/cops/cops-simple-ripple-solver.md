@@ -1,7 +1,7 @@
 ---
 title: COPs Simple Ripple Solver
-slug: cops-simple-ripple-solver
-date: 2025-10-08
+sidebar_label: Simple Ripple Solver
+sidebar_position: 3
 description: A lightweight water ripple simulation using the 2D wave equation
 tags: [houdini, cops, opencl, simulation, vfx]
 ---
@@ -9,8 +9,6 @@ tags: [houdini, cops, opencl, simulation, vfx]
 # Simple Ripple Solver in Houdini COPs
 
 This is a simple yet effective ripple solver implemented as a Houdini COPs OpenCL kernel. It simulates 2D water waves based on the discrete wave equation, perfect for creating realistic ripple effects on image layers.
-
-<!-- truncate -->
 
 ## Physics Background
 
