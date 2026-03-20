@@ -29,7 +29,8 @@ I'm a builder who works across creative technology — from procedural 3D and re
 - [Simple Ripple Solver](/houdini/copernicus/cops-simple-ripple-solver) — Lightweight water ripple simulation using the 2D wave equation
 - [GPU Particle Advection](/houdini/copernicus/cops-gpu-particle) — Advecting particles entirely within the Copernicus context
 
-## Projects
+## Open-Source Tools
 
-- [**Motion COPS**](https://github.com/Boning1011/motion-cops) — Open-source Houdini toolkit that turns Copernicus into a motion design powerhouse
+- [**Motion COPS**](https://github.com/Boning1011/motion-cops) — Houdini toolkit that turns Copernicus into a motion design powerhouse
 - [**Houdini Agent**](https://github.com/Boning1011/houdini-agent) — AI coding agent bridge for Houdini, letting LLMs read and manipulate live scenes
+- [**TouchDesigner Agent**](https://github.com/Boning1011/touchdesigner-agent) — TCP bridge for AI-driven GLSL workflows in TouchDesigner
